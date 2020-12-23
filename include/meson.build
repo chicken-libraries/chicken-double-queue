@@ -1,4 +1,4 @@
-add_global_arguments('-DBUILDING_CHICKEN_PACKAGE', language : 'c')
+add_project_arguments('-DBUILDING_CHICKEN_DEQUEUE_PACKAGE', language : 'c')
 
 inc_dir = include_directories('.')
-install_headers(files('chicken' / 'package.h'))
+install_headers(files('chicken' / 'double-queue.h'))
