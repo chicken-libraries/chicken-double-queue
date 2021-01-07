@@ -97,7 +97,7 @@ void chickenDeQueueErase(DeQueueOf **structureRef)
 // -> [structurePtr]: Pointer to your structure
 // -> [data]: Your data being passed in
 //
-void chickenDeQueuePushStart(DeQueueOf *structurePtr, char *data)
+void chickenDeQueuePush(DeQueueOf *structurePtr, char *data)
 {
     chickenDeQueuePushStart(structurePtr, data);
 } // end of function chickenDeQueuePush
