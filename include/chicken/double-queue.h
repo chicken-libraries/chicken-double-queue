@@ -38,10 +38,13 @@ CHICKEN_PUBLIC void chickenDeQueueErase(DeQueueOf **structureRef);
 // Operations provided
 //
 
+CHICKEN_PUBLIC void chickenDeQueuePush(DeQueueOf *structurePtr, char *data);
 CHICKEN_PUBLIC void chickenDeQueuePushStart(DeQueueOf *structurePtr, char *data);
 CHICKEN_PUBLIC void chickenDeQueuePushEnd(DeQueueOf *structurePtr, char *data);
+CHICKEN_PUBLIC char *chickenDeQueuePop(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC char *chickenDeQueuePopStart(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC char *chickenDeQueuePopEnd(DeQueueOf *structurePtr);
+CHICKEN_PUBLIC char *chickenDeQueuePeek(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC char *chickenDeQueuePeekStart(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC char *chickenDeQueuePeekEnd(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC unsigned int chickenDeQueueItsEmpty(DeQueueOf *structurePtr);
