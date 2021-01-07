@@ -69,7 +69,7 @@ int main(void)
 
     while (chickenDeQueueNotEmpty(mQueue))
     {
-        printf("%s ", chickenDeQueuePeekStart(mQueue));
+        printf("%s ", chickenDeQueuePeek(mQueue));
         chickenDeQueuePop(mQueue);
     } // end while
     chickenDeQueueErase(&mQueue);
