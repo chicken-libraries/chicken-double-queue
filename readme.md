@@ -25,7 +25,7 @@ directory and include the dependency in your project.
 [wrap-git]
 directory = chicken-double-queue
 url = https://github.com/chicken-libraries/chicken-double-queue.git
-revision = main
+revision = v0.1.1
 ```
 
 
