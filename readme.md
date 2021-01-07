@@ -63,14 +63,14 @@ int main(void)
     {
         return EXIT_FAILURE;
     } // end if
-    chickenDeQueuePushStart(mQueue, "hello");
-    chickenDeQueuePushStart(mQueue, "crazy");
-    chickenDeQueuePushStart(mQueue, "world");
+    chickenDeQueuePush(mQueue, "hello");
+    chickenDeQueuePush(mQueue, "crazy");
+    chickenDeQueuePush(mQueue, "world");
 
     while (chickenDeQueueNotEmpty(mQueue))
     {
         printf("%s ", chickenDeQueuePeekStart(mQueue));
-        chickenDeQueuePopStart(mQueue);
+        chickenDeQueuePop(mQueue);
     } // end while
     chickenDeQueueErase(&mQueue);
     return EXIT_SUCCESS;
