@@ -91,6 +91,18 @@ void chickenDeQueueErase(DeQueueOf **structureRef)
 } // end of function chickenDeQueueErase
 
 //
+// Should perform same behavior as chickenDeQueuePushStart
+//
+// Param list:
+// -> [structurePtr]: Pointer to your structure
+// -> [data]: Your data being passed in
+//
+void chickenDeQueuePushStart(DeQueueOf *structurePtr, char *data)
+{
+    chickenDeQueuePushStart(structurePtr, data);
+} // end of function chickenDeQueuePush
+
+//
 // Should push a new recored into start of the queue if the
 // structure is not nullptr. Else nothing.
 //
@@ -165,6 +177,17 @@ void chickenDeQueuePushEnd(DeQueueOf *structurePtr, char *data)
 } // end of function chickenDeQueuePushEnd
 
 //
+// Should perform same behavior as chickenDeQueuePopStart
+//
+// Param list:
+// -> [structurePtr]: Pointer to your structure
+//
+char *chickenDeQueuePop(DeQueueOf *structurePtr)
+{
+    return chickenDeQueuePopStart(structurePtr);
+} // end of function chickenDeQueuePop
+
+//
 // Should return the value stored in the removed node from
 // start of structure if the structure is both not nullptr
 // and or empty. If so where gonna return nullptr.
@@ -229,6 +252,18 @@ char *chickenDeQueuePopEnd(DeQueueOf *structurePtr)
     free(temp);
     return value;
 } // end of function chickenDeQueuePopEnd
+
+
+//
+// Should perform the same behavior as chickenDeQueuePeekStart
+//
+// Param list:
+// -> [structurePtr]: Pointer to your structure
+//
+char *chickenDeQueuePeek(DeQueueOf *structurePtr)
+{
+    return chickenDeQueuePeekStart(structurePtr);
+} // end of function chickenDeQueuePeek
 
 //
 // Should return the value stored in begin pointer from
