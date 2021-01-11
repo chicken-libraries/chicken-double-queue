@@ -26,16 +26,21 @@ directory and include the dependency in your project.
 directory = chicken-double-queue
 url = https://github.com/chicken-libraries/chicken-double-queue.git
 revision = main
+
+[provide]
+chicken_double = chicken_double_dep
+
 ```
 
 
 The next step should be to add the package to your Meson project:
 
 ```meson
-chicken_double_queue = subproject('chicken-double-queue')
+
+chicken_dep = dependency('chicken-double-queue')
 
 executable('prog', files('main.c'),
-    dependencies : [chicken_double_queue.get_variable('chicken_double_queue_dep')])
+    dependencies : [chicken_dep])
 
 ```
 
