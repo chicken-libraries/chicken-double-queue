@@ -24,7 +24,6 @@
 // targeting c23 standard.
 //
 
-typedef struct DeQueueNode DeQueueNode;
 typedef struct DeQueueOf DeQueueOf;
 
 //

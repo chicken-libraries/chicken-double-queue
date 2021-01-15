@@ -24,12 +24,12 @@ enum
 // > [_nextPtr] is the pointer to the next node
 // > [_prevPtr] is the pointer to the prev node
 //
-struct DeQueueNode
+typedef struct DeQueueNode
 {
     char *_data;
     struct DeQueueNode *_prevPtr;
     struct DeQueueNode *_nextPtr;
-}; // end of struct
+} DeQueueNode; // end of struct
 
 //
 // This is the official definition for the Chicken Libraries
