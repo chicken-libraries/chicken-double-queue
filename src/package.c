@@ -6,7 +6,6 @@
 #include "chicken/double-queue.h"
 
 #include <stdlib.h>
-#include <string.h>
 
 enum
 {
@@ -313,4 +312,16 @@ unsigned int chickenDeQueueItsEmpty(DeQueueOf *structurePtr)
 unsigned int chickenDeQueueNotEmpty(DeQueueOf *structurePtr)
 {
     return (structurePtr->_beginPtr || structurePtr->_endPtr) ? success : failed;
+} // end of functions chickenDeQueueNotEmpty
+
+//
+// Should return the number of items stored in the structure if it's not
+// empty in anyway.
+//
+// Param list:
+// -> [structurePtr]: Pointer to your structure
+//
+unsigned int chickenDeQueueGetSize(DeQueueOf *structurePtr)
+{
+    return (chickenDeQueueNotEmpty(structurePtr)) ? structurePtr->_size : failed;
 } // end of functions chickenDeQueueNotEmpty

@@ -48,5 +48,6 @@ CHICKEN_PUBLIC char *chickenDeQueuePeekStart(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC char *chickenDeQueuePeekEnd(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC unsigned int chickenDeQueueItsEmpty(DeQueueOf *structurePtr);
 CHICKEN_PUBLIC unsigned int chickenDeQueueNotEmpty(DeQueueOf *structurePtr);
+CHICKEN_PUBLIC unsigned int chickenDeQueueGetSize(DeQueueOf *structurePtr);
 
 #endif // end of CHICKEN_PACKAGE_H
